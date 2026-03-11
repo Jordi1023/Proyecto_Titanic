@@ -74,7 +74,3 @@ Have Python 3.x installed along with the following libraries:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn scipy
 ```
-
----
-
-This translation maintains all the technical accuracy while sounding professional and natural in English. Perfect for your GitHub README or LinkedIn project description! 🚀
