@@ -12,11 +12,11 @@ Este es mi primer proyecto de **Data Science y Machine Learning**, basado en el 
 
 El objetivo es predecir qué pasajeros tenían más probabilidades de sobrevivir al trágico hundimiento del Titanic en 1912, utilizando características como la edad, el sexo, la clase del ticket, entre otros.
 
-## 🎯 Objetivo
+##  Objetivo
 
 Construir un modelo de clasificación que pueda predecir con precisión si un pasajero sobrevivió (1) o no (0), aplicando técnicas de limpieza de datos, análisis exploratorio y machine learning.
 
-## 📊 Resultados Obtenidos
+##  Resultados Obtenidos
 
 - **Precisión del modelo:** 79% en el conjunto de validación
 - **Modelo utilizado:** Random Forest Classifier (200 árboles)
