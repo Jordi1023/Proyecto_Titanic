@@ -33,13 +33,13 @@ Construir un modelo de clasificación que pueda predecir con precisión si un pa
 
 ##  Estructura del Análisis
 
-### 1️⃣ Análisis Exploratorio de Datos (EDA)
+### 1. Análisis Exploratorio de Datos (EDA)
 - Exploración inicial de las variables
 - Identificación de valores faltantes
 - Análisis de outliers en la columna `Age` usando el método IQR
 - Visualización de distribuciones (histogramas y KDE)
 
-### 2️⃣ Limpieza y Transformación de Datos
+### 2. Limpieza y Transformación de Datos
 - **Edad (Age):** 
   - Identificados 11 outliers
   - Sesgo de 0.388 (distribución aproximadamente simétrica)
@@ -52,23 +52,23 @@ Construir un modelo de clasificación que pueda predecir con precisión si un pa
   - Extraída la primera letra (cubierta)
   - Valores nulos categorizados como 'UNKNOWN' para no perder información
 
-### 3️⃣ Ingeniería de Características (Feature Engineering)
+### 3. Ingeniería de Características (Feature Engineering)
 - Conversión de variables categóricas a numéricas mediante **one-hot encoding**:
   - `Sex`: male/female
   - `Embarked`: Q, S, C
   - `Cabin`: A, B, C, D, E, F, G, T, UNKNOWN
 - **Variables finales:** 16 características para el modelo
 
-### 4️⃣ Modelado
+### 4. Modelado
 - División de datos: 80% entrenamiento, 20% validación
 - Algoritmo: **Random Forest Classifier** con 200 árboles
 - Entrenamiento y validación del modelo
 
-### 5️⃣ Evaluación
+### 5. Evaluación
 - **Métrica utilizada:** Accuracy (precisión)
 - **Resultado:** 79% de precisión en validación
 
-## 📈 Visualizaciones Incluidas
+##  Visualizaciones Incluidas
 
 - Box plot de edades (detección de outliers)
 - Histograma con curva KDE de la distribución de edades
