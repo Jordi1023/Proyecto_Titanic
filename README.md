@@ -11,7 +11,7 @@ Build a classification model that can accurately predict whether a passenger sur
 ## **Results Obtained**
 
 - **Model Accuracy:** 79% on the validation set
-- **Model Used:** Random Forest Classifier (200 trees)
+- **Model Used:** Random Forest Classifier - 200 trees (could've been only 100)
 - **Best Predictors:** Sex, social class (Pclass), and age
 
 ## **Technologies and Libraries Used**
