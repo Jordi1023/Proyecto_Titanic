@@ -1,67 +1,80 @@
-#Descripción del Proyecto
-Este es mi primer proyecto de Data Science y Machine Learning, basado en el famoso desafío de Kaggle: "Titanic: Machine Learning from Disaster".
+# **Project Description**
 
-El objetivo es predecir qué pasajeros tenían más probabilidades de sobrevivir al trágico hundimiento del Titanic en 1912, utilizando características como la edad, el sexo, la clase del ticket, entre otros.
+This is my first Data Science and Machine Learning project, based on the famous Kaggle challenge: ["Titanic: Machine Learning from Disaster"](https://www.kaggle.com/c/titanic).
 
-## Objetivo
-Construir un modelo de clasificación que pueda predecir con precisión si un pasajero sobrevivió (1) o no (0), aplicando técnicas de limpieza de datos, análisis exploratorio y machine learning.
+The goal is to predict which passengers were most likely to survive the tragic sinking of the Titanic in 1912, using features such as age, sex, ticket class, among others.
 
-## Resultados Obtenidos
-Precisión del modelo: 79% en el conjunto de validación
-Modelo utilizado: Random Forest Classifier (200 árboles)
-Mejores predictores: Sexo, clase social (Pclass) y edad
-Tecnologías y Librerías Utilizadas
-Python 3.x
-Pandas - Manipulación y análisis de datos
-NumPy - Cálculos numéricos
-Matplotlib y Seaborn - Visualización de datos
-Scikit-learn - Machine learning (Random Forest, train/test split, métricas)
-SciPy - Estadística (cálculo de sesgo)
-Estructura del Análisis
-1. Análisis Exploratorio de Datos (EDA)
-Exploración inicial de las variables
-Identificación de valores faltantes
-Análisis de outliers en la columna Age usando el método IQR
-Visualización de distribuciones (histogramas y KDE)
-2. Limpieza y Transformación de Datos
-Edad (Age):
+## **Objective**
 
-Identificados 11 outliers
-Sesgo de 0.388 (distribución aproximadamente simétrica)
-Valores nulos imputados con la mediana (28 años)
-Puerto de Embarque (Embarked):
+Build a classification model that can accurately predict whether a passenger survived (1) or not (0), applying data cleaning techniques, exploratory analysis, and machine learning.
 
-2 valores nulos imputados con la moda
-Cabina (Cabin):
+## **Results Obtained**
 
-Extraída la primera letra (cubierta)
-Valores nulos categorizados como 'UNKNOWN' para no perder información
-3. Ingeniería de Características (Feature Engineering)
-Conversión de variables categóricas a numéricas mediante one-hot encoding:
-Sex: male/female
-Embarked: Q, S, C
-Cabin: A, B, C, D, E, F, G, T, UNKNOWN
-Variables finales: 16 características para el modelo
-4. Modelado
-División de datos: 80% entrenamiento, 20% validación
-Algoritmo: Random Forest Classifier con 200 árboles
-Entrenamiento y validación del modelo
-5. Evaluación
-Métrica utilizada: Accuracy (precisión)
-Resultado: 79% de precisión en validación
-Visualizaciones Incluidas
-Box plot de edades (detección de outliers)
-Histograma con curva KDE de la distribución de edades
-Comparación visual entre media y mediana
-Cómo Ejecutar el Proyecto
-Requisitos previos
-Tener instalado Python 3.x y las siguientes librerías:
+- **Model Accuracy:** 79% on the validation set
+- **Model Used:** Random Forest Classifier (200 trees)
+- **Best Predictors:** Sex, social class (Pclass), and age
 
-pip install pandas numpy matplotlib seaborn scikit-learn scipy traducelo al ingles
+## **Technologies and Libraries Used**
 
-##  Cómo Ejecutar el Proyecto
+- **Python 3.x**
+- **Pandas** - Data manipulation and analysis
+- **NumPy** - Numerical computations
+- **Matplotlib and Seaborn** - Data visualization
+- **Scikit-learn** - Machine learning (Random Forest, train/test split, metrics)
+- **SciPy** - Statistics (skewness calculation)
 
-### Requisitos previos
-Tener instalado Python 3.x y las siguientes librerías:
+## **Analysis Structure**
+
+### **1. Exploratory Data Analysis (EDA)**
+- Initial exploration of variables
+- Identification of missing values
+- Outlier analysis in the Age column using the IQR method
+- Distribution visualization (histograms and KDE)
+
+### **2. Data Cleaning and Transformation**
+
+**Age:**
+- 11 outliers identified
+- Skewness of 0.388 (approximately symmetric distribution)
+- Missing values imputed with median (28 years)
+
+**Embarked:**
+- 2 missing values imputed with mode
+
+**Cabin:**
+- First letter extracted (deck)
+- Missing values categorized as 'UNKNOWN' to avoid losing information
+
+### **3. Feature Engineering**
+- Conversion of categorical variables to numerical using one-hot encoding:
+  - **Sex:** male/female
+  - **Embarked:** Q, S, C
+  - **Cabin:** A, B, C, D, E, F, G, T, UNKNOWN
+- **Final features:** 16 characteristics for the model
+
+### **4. Modeling**
+- Data split: 80% training, 20% validation
+- Algorithm: **Random Forest Classifier** with 200 trees
+- Model training and validation
+
+### **5. Evaluation**
+- Metric used: Accuracy
+- **Result:** 79% accuracy on validation set
+
+## **Visualizations Included**
+- Age box plot (outlier detection)
+- Histogram with KDE curve of age distribution
+- Visual comparison between mean and median
+
+## **How to Run the Project**
+
+### **Prerequisites**
+Have Python 3.x installed along with the following libraries:
+
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn scipy
+```
+
+---
+
+This translation maintains all the technical accuracy while sounding professional and natural in English. Perfect for your GitHub README or LinkedIn project description! 🚀
