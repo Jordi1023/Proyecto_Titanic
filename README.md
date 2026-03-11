@@ -22,7 +22,7 @@ Construir un modelo de clasificación que pueda predecir con precisión si un pa
 - **Modelo utilizado:** Random Forest Classifier (200 árboles)
 - **Mejores predictores:** Sexo, clase social (Pclass) y edad
 
-## 🛠️ Tecnologías y Librerías Utilizadas
+##  Tecnologías y Librerías Utilizadas
 
 - **Python 3.x**
 - **Pandas** - Manipulación y análisis de datos
