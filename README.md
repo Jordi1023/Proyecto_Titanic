@@ -31,7 +31,7 @@ Construir un modelo de clasificación que pueda predecir con precisión si un pa
 - **Scikit-learn** - Machine learning (Random Forest, train/test split, métricas)
 - **SciPy** - Estadística (cálculo de sesgo)
 
-## 📋 Estructura del Análisis
+##  Estructura del Análisis
 
 ### 1️⃣ Análisis Exploratorio de Datos (EDA)
 - Exploración inicial de las variables
@@ -74,7 +74,7 @@ Construir un modelo de clasificación que pueda predecir con precisión si un pa
 - Histograma con curva KDE de la distribución de edades
 - Comparación visual entre media y mediana
 
-## 🚀 Cómo Ejecutar el Proyecto
+##  Cómo Ejecutar el Proyecto
 
 ### Requisitos previos
 Tener instalado Python 3.x y las siguientes librerías:
